@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Szabolcs's Blog</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Home</a></li>
+        <li><a href="#section2">Friends</a></li>
+        <li><a href="#section3">Family</a></li>
+        <li><a href="#section3">Photos</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>My time in the Budai Castle</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Székely Szabolcs, Feburay 26, 2023.</h5>
+      <h5><span class="label label-danger">Travel</span> <span class="label label-primary">Story</span></h5><br>
+      <p>Last week me and my family went to the Budai Castle for a tour. First we picked up my dad from his work place. After that we took the bus, because as my mother once said "I'm not gonna climb that mountain!". We talked a lot and took a few pictures as well. We ate the sweets that my mother brought with her than I started to annoy my little brother. However in the process he fell down one of the stony stairs and hurt his ancles. Mom got really angry at me so much that I wasn't able to talk to her on the rest of the trip. When we arrived at home I made the dinner and went to take a bath. When I got out of the tub the entire family sit around the table and played UNO. I quckly dressed up and started playing with them. When we finished I apolagized to my mom, and my mom started renting why it was so dangerous. In the end no body got hurt exept the little bro.</p>
+      <img src="selfie.png" height="120px" width="120px"> <img src="kilatas.png" height="120px" width="120px"> <img src="latvany.png" height="120px" width="120px"> <img src="naplemente.png" height="120px" width="120px"> <img src="insta.png" height="120px" width="120px"> <img src="shit.png" height="120px" width="120px"> <img src="szobor.png" height="120px" width="120px"> 
+      <br><br>
+      
+      
+
+      <h4>Leave a Comment:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> Comments:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="1lebi.png" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Levente <small>Feburay 27, 2023, 6:69 PM</small></h4>
+          <p>Nagyon Barokk lett Szabi. Bár többet kéne tanúlnod! </p>
+          <br>
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="ártyom.png" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Ártyem <small>Sep 28, 2023, 4:20 AM</small></h4>
+          <p>Nigger, Ja mi. XD</p>
+          <br>
+          <p><span class="badge">1</span> Comment:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="1lebi.png" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-xs-10">
+              <h4>Levente <small>Sep 28, 2023, 4:28 AM</small></h4>
+              <p>Na de ártyom. Ne degradáld Szabit hát ilyet.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
